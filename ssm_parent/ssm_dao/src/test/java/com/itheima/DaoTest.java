@@ -15,7 +15,7 @@ public class DaoTest {
     public void test01(){
         ClassPathXmlApplicationContext act = new ClassPathXmlApplicationContext("classpath:spring-mybatis.xml");
         ItemsDao dao = act.getBean(ItemsDao.class);
-        Items findId = dao.findById(2);
+        Items findId = dao.findById(1);
         System.out.println(findId);
     }
 }
